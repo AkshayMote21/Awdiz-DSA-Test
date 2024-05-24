@@ -139,18 +139,18 @@
 // Write a JavaScript function that takes an array of numbers as input and returns the maximum difference between any two numbers in the array.
 // https://www.w3resource.com/javascript-exercises/javascript-basic-exercise-93.php
 
-// var array = [8,3,6,1,9,2,7,5,4];
-// var result = 0;
-// function maxDifference(array){
-//     for(var i = 0; i<array.length;i++){
-//         for(var j = 0; j !== i && j<array.length ;j++){
-//           var  max_diff = Math.abs(array[i] - array[j]);
-//             // result = Math.max(max_diff,result);
-//             if(max_diff > result){        // 5>0 // 2>5 // 7>5 // 1>7 // 6>7 // 1>7 // 3>7 // 4>7
-//                 result = max_diff;
-//             }
-//         }
-//     }
-//     return result;
-// }
-// console.log(maxDifference(array));
+var array = [8,3,6,1,9,2,7,5,4];
+var result = 0;
+function maxDifference(array){
+    for(var i = 0; i<array.length;i++){
+        for(var j = 0; j !== i && j<array.length ;j++){
+          var  max_diff = Math.abs(array[i] - array[j]); // i =8 j=3 => 5
+            result = Math.max(max_diff,result);
+            // if(max_diff > result){        // 5>0 // 2>5 // 7>5 // 1>7 // 6>7 // 1>7 // 3>7 // 4>7
+            //     result = max_diff;
+            // }
+        }
+    }
+    return result;
+}
+console.log(maxDifference(array));
