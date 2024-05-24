@@ -38,20 +38,49 @@
 
 // Question 4:
 // Write a JavaScript program that generates a Fibonacci sequence up to a certain number n, using a while loop.
-
-
+// 1 2 3 4 5 6 7 8  9  10 11 12 13
+// 0 1 1 2 3 5 8 13 21 34 55 89 144
+//https://www.geeksforgeeks.org/javascript-program-to-print-fibonacci-series/
+// https://www.programiz.com/javascript/examples/fibonacci-series
+// function fibonacci(num) {
+//     if (num == 1){
+//         return 0;
+//     }   
+//     else if (num == 2){
+//         return 1;
+//     }
+//     else{
+//         let num1 = 0;
+//         let num2 = 1;
+//         let sum;
+//         let i = 2;
+//         console.log(num1);
+//         while (i < num) {
+//             console.log(num2);
+//             sum = num1 + num2;
+//             num1 = num2;
+//             num2 = sum;
+//             i++;
+//             // console.log(num2);
+//         }
+//         return num2;
+//     }     
+// }
+// console.log(fibonacci(13));
 
 // Question 5:
 // Create a JavaScript function that takes an array of strings as input and returns a new array with only the strings that have a length greater than 5 characters.
-var array = ["Rohit","Virat","Rishabh","Jasprit","Ravindra","Rahul"];
-function Length(array){
-    for(i=0;i<array.length;i++){
-        if(array[i].length >5){
-           var array2 = console.log([array[i]]);
-        }
-    }
-}
-Length(array);
+// var array = ["Rohit","Virat","Rishabh","Jasprit","Ravindra","Rahul"];
+// var array2 = [];
+// function Length(array){
+//     for(i=0;i<array.length;i++){
+//         if(array[i].length >5){
+//             array2.push(array[i]);
+//         }
+//     }
+//     return array2;
+// }
+// console.log(Length(array));
 
 
 // Question 6:
@@ -94,9 +123,34 @@ Length(array);
 
 // Question 8:
 // Write a JavaScript function that takes a string as input and returns the reverse of the string using a for loop.
-
+// var string = "TojiFushiguro";
+// var string2 = "";
+// function reverseString(string){
+//     for(var i = string.length;i>=0;i--){
+//         string2 = string2 + string.charAt(i) ;
+//     }
+//     return string2;
+// }
+// console.log(reverseString(string));
 // Question 9:
 // Create a JavaScript program that generates a random password of a specified length, consisting of letters (both uppercase and lowercase) and numbers.
 
 // Question 10:
 // Write a JavaScript function that takes an array of numbers as input and returns the maximum difference between any two numbers in the array.
+// https://www.w3resource.com/javascript-exercises/javascript-basic-exercise-93.php
+
+// var array = [8,3,6,1,9,2,7,5,4];
+// var result = 0;
+// function maxDifference(array){
+//     for(var i = 0; i<array.length;i++){
+//         for(var j = 0; j !== i && j<array.length ;j++){
+//           var  max_diff = Math.abs(array[i] - array[j]);
+//             // result = Math.max(max_diff,result);
+//             if(max_diff > result){        // 5>0 // 2>5 // 7>5 // 1>7 // 6>7 // 1>7 // 3>7 // 4>7
+//                 result = max_diff;
+//             }
+//         }
+//     }
+//     return result;
+// }
+// console.log(maxDifference(array));
